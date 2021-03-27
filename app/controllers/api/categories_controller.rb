@@ -1,7 +1,7 @@
 class Api::CategoriesController < ApplicationController
     def index
         categories = Category.all 
-        render json: categories
+        render json: CategorySerializer.new(categories)
     end
 
     def create

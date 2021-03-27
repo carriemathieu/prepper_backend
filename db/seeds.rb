@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Category.destroy_all
+Word.destroy_all
+
 ruby = Category.create(name: "Ruby")
 rails = Category.create(name: "Rails")
 javascript = Category.create(name: "Javascript")

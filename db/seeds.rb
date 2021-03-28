@@ -30,3 +30,7 @@ Word.create(title: "js basics", name: "callback", category_id: javascript.id)
 Word.create(title: "js basics", name: "scope", category_id: javascript.id)
 Word.create(title: "js basics", name: "DOM", category_id: javascript.id)
 Word.create(title: "js basics", name: "variables", category_id: javascript.id)
+
+# category can have multiple word lists (i.e. ruby, javascript, etc) but category can ONLY have one of each type
+# each word list has it's own unique title - can have multiple within the same category (i.e. "ruby basics", "ruby advanced", etc.) 
+

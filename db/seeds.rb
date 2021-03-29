@@ -13,23 +13,11 @@ ruby = Category.create(name: "Ruby")
 rails = Category.create(name: "Rails")
 javascript = Category.create(name: "Javascript")
 
-Word.create(title: "basics", name: "association", category_id: ruby.id)
-Word.create(title: "basics", name: "object", category_id: ruby.id)
-Word.create(title: "basics", name: "class", category_id: ruby.id)
-Word.create(title: "basics", name: "model", category_id: ruby.id)
-Word.create(title: "basics", name: "controller", category_id: ruby.id)
+Word.create(title: "basics", word_list: ["association", "object", "class", "model", "controller"], category_id: ruby.id)
 
-Word.create(title: "rails basics", name: "routes", category_id: rails.id)
-Word.create(title: "rails basics", name: "api", category_id: rails.id)
-Word.create(title: "rails basics", name: "backend", category_id: rails.id)
-Word.create(title: "rails basics", name: "mvc", category_id: rails.id)
-Word.create(title: "rails basics", name: "controller", category_id: rails.id)
+Word.create(title: "rails basics", word_list: ["routes", "api", "backend",  "mvc", "controller"], category_id: rails.id)
 
-Word.create(title: "js basics", name: "function", category_id: javascript.id)
-Word.create(title: "js basics", name: "callback", category_id: javascript.id)
-Word.create(title: "js basics", name: "scope", category_id: javascript.id)
-Word.create(title: "js basics", name: "DOM", category_id: javascript.id)
-Word.create(title: "js basics", name: "variables", category_id: javascript.id)
+Word.create(title: "js basics", word_list: ["function", "callback", "scope", "DOM", "variables"], category_id: javascript.id)
 
 # category can have multiple word lists (i.e. ruby, javascript, etc) but category can ONLY have one of each type
 # each word list has it's own unique title - can have multiple within the same category (i.e. "ruby basics", "ruby advanced", etc.) 

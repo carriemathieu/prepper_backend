@@ -6,7 +6,6 @@ class Api::WordsController < ApplicationController
 
     def create
         words_list = Word.new(words_params)
-        byebug
         if words_list.save
             render json: WordSerializer.new(words_list), status: :accepted
         else

@@ -9,7 +9,7 @@ class Api::WordsController < ApplicationController
         if words_list.save
             render json: WordSerializer.new(words_list), status: :accepted
         else
-            render json: {errors: word_list.errors.full_messages}
+            render json: {errors: words_list.errors.full_messages}
         end
     end
 

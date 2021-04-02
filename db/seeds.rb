@@ -15,7 +15,7 @@ javascript = Category.create(name: "Javascript")
 
 Word.create(title: "basics", word_list: ["association", "object", "class", "model", "controller"], category_id: ruby.id)
 
-Word.create(title: "rails basics", word_list: ["routes", "api", "backend",  "mvc", "controller"], category_id: rails.id)
+Word.create(title: "rails basics", word_list: ["route", "API", "back-end",  "mvc", "controller"], category_id: rails.id)
 
 Word.create(title: "js basics", word_list: ["function", "callback", "scope", "DOM", "variables"], category_id: javascript.id)
 
